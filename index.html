@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="周末集连接大学生和校园周边商家。按校区、日期和结算方式筛选周末兼职，在线报名并跟进进度。">
+  <meta name="theme-color" content="#f7f8f2">
+  <title>周末集｜大学生周末兼职</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='13' fill='%231b513a'/%3E%3Cg fill='none' stroke='%23ddf69b' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.2'%3E%3Cpath d='M13 19h22l2 16a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2l2-16Z'/%3E%3Cpath d='M19 21v-5a5 5 0 0 1 10 0v5m-5 5v4l3 2'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden">
+    <defs>
+      <symbol id="icon-logo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l1.4 11a1.3 1.3 0 0 1-1.3 1.5H4.9A1.3 1.3 0 0 1 3.6 19L5 8Z"/><path d="M8.5 9.5V6a3.5 3.5 0 1 1 7 0v3.5M12 12.5v3l2 1.3"/></g></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="5.8"/><path d="m15 15 4.1 4.1"/></symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18.7 10.1c0 4.8-6.7 10-6.7 10s-6.7-5.2-6.7-10a6.7 6.7 0 1 1 13.4 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h2m3 0h2m-7 3h2"/></symbol>
+      <symbol id="icon-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7.3V6a2 2 0 0 1 2-2h11m1 3H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-5V9a2 2 0 0 0-2-2Z"/><rect x="14" y="11" width="7" height="5" rx="1"/><path d="M17 13.5h.1"/></symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m7 10 5 5 5-5"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+      <symbol id="icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H5m6-6-6 6 6 6"/></symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 9.2c0 4-8.2 9.3-8.2 9.3s-8.2-5.3-8.2-9.3a4.2 4.2 0 0 1 8.2-1.1 4.2 4.2 0 0 1 8.2 1.1Z"/></symbol>
+      <symbol id="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1M3 12a22 22 0 0 0 18 0m-9 0v3"/></symbol>
+      <symbol id="icon-coffee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h13v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3Zm13 1h2a2 2 0 0 1 0 4h-2m-14 6h16M8 4c-1 1-1 2 0 3m4-3c-1 1-1 2 0 3"/></symbol>
+      <symbol id="icon-shop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 2-5h14l2 5v2a2 2 0 0 1-4 0 2.5 2.5 0 0 1-5 0 2.5 2.5 0 0 1-5 0 2 2 0 0 1-4 0V9Zm1 4v7h16v-7m-10 7v-5h4v5"/></symbol>
+      <symbol id="icon-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8L11 3Zm7 11 1 2.8 2.8 1-2.8 1L18 22l-1-3.2-2.8-1 2.8-1L18 14Z"/></symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6a8.5 8.5 0 0 0-8-1v14a8.5 8.5 0 0 1 8 1 8.5 8.5 0 0 1 8-1V5a8.5 8.5 0 0 0-8 1Zm0 0v14"/></symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.2 3.2 7.3 7 9 3.8-1.7 7-4.8 7-9V6l-7-3Zm-3 9 2 2 4-4"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4 10-9"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="icon-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16M8 5v4m7 1v4m-5 1v4"/></symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3"/><path d="M5 20v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="icon-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 9h6m-6 3h6m-6 3h4"/></symbol>
+      <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 11v5m0-8h.01"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main-content">跳至主要内容</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <button type="button" class="brand" data-view-target="jobs" aria-label="周末集首页">
+        <span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-logo"/></svg></span>
+        <span class="brand-copy"><span class="brand-name">周末集</span><span class="brand-subtitle">校园周末兼职</span></span>
+      </button>
+      <nav class="main-nav" aria-label="学生导航">
+        <button type="button" class="nav-link is-active" data-view-target="jobs" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg>找兼职</button>
+        <button type="button" class="nav-link" data-view-target="applications"><svg class="icon" aria-hidden="true"><use href="#icon-list"/></svg>我的报名</button>
+        <button type="button" class="nav-link" data-view-target="favorites"><svg class="icon" aria-hidden="true"><use href="#icon-heart"/></svg>收藏</button>
+      </nav>
+      <button type="button" class="merchant-entry" data-view-target="merchant"><svg class="icon" aria-hidden="true"><use href="#icon-shop"/></svg>商家入口<svg class="icon merchant-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+    </div>
+  </header>
+
+  <main class="container main-content" id="main-content" tabindex="-1">
+    <section data-view="jobs" aria-label="找周末兼职">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="hero-eyebrow"><span class="hero-dot" aria-hidden="true"></span> 本周可报名 <span class="hero-eyebrow-divider" aria-hidden="true"></span> <span id="weekend-dates">本周末</span></div>
+          <h1 class="hero-title">周末有空，<span>就来做点喜欢的。</span></h1>
+          <p class="hero-description">从校门口的咖啡店到城市活动现场，挑一份合适的周末兼职。时薪、班次和路程，出发前就看清。</p>
+          <div class="hero-perks" aria-label="平台特点">
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>校园周边</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg>周末排班</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-wallet"/></svg>薪资透明</span>
+          </div>
+        </div>
+        <div class="hero-art"><img src="assets/hero.svg" alt="" width="500" height="300" fetchpriority="high"></div>
+      </div>
+
+      <div class="filters" aria-label="岗位筛选">
+        <form id="search-form" class="search-bar" role="search">
+          <label class="filter-field campus-field">
+            <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+            <select id="campus" aria-label="校区">
+              <option value="xia-sha">下沙大学城</option>
+              <option value="zhejiang-gongshang">浙江工商大学</option>
+              <option value="hangzhou-dianzi">杭州电子科技大学</option>
+              <option value="zhejiang-ligong">浙江理工大学</option>
+            </select>
+            <svg class="icon filter-chevron" aria-hidden="true"><use href="#icon-chevron"/></svg>
+          </label>
+          <label class="filter-field search-field">
+            <svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg>
+            <input id="search" type="search" aria-label="搜索岗位或商家" placeholder="搜索岗位或商家" maxlength="60" autocomplete="off">
+          </label>
+          <label class="filter-field day-field">
+            <svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg>
+            <select id="day" aria-label="可工作日期">
+              <option value="all">全部日期</option><option value="sat">周六</option><option value="sun">周日</option>
+            </select>
+            <svg class="icon filter-chevron" aria-hidden="true"><use href="#icon-chevron"/></svg>
+          </label>
+          <label class="filter-field settlement-field">
+            <svg class="icon" aria-hidden="true"><use href="#icon-wallet"/></svg>
+            <select id="settlement" aria-label="结算方式">
+              <option value="all">全部结算</option><option value="日结">日结</option><option value="周结">周结</option>
+            </select>
+            <svg class="icon filter-chevron" aria-hidden="true"><use href="#icon-chevron"/></svg>
+          </label>
+          <button type="submit" class="search-submit">搜索岗位<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+        </form>
+        <div class="categories" id="categories" role="group" aria-label="岗位类别">
+          <button type="button" class="category-button is-active" data-category="all" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#icon-grid"/></svg>全部岗位</button>
+          <button type="button" class="category-button" data-category="餐饮" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-coffee"/></svg>餐饮</button>
+          <button type="button" class="category-button" data-category="零售" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-shop"/></svg>零售</button>
+          <button type="button" class="category-button" data-category="活动" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-sparkles"/></svg>活动</button>
+          <button type="button" class="category-button" data-category="家教" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>家教</button>
+          <button type="button" class="category-button" data-category="其他" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>其他</button>
+        </div>
+      </div>
+
+      <section class="listing-section" aria-labelledby="listing-title" id="jobs-section">
+        <div class="section-heading">
+          <div class="section-heading-copy">
+            <p class="section-kicker">WEEKEND PICKS</p>
+            <h2 class="section-title" id="listing-title">周末好岗位</h2>
+            <div class="section-meta"><span id="job-count" aria-live="polite"></span><button type="button" id="reset-filters" class="reset-button" data-action="reset-filters">重置筛选</button></div>
+          </div>
+          <label class="sort-field">
+            <svg class="icon" aria-hidden="true"><use href="#icon-sliders"/></svg>
+            <select id="sort" aria-label="岗位排序">
+              <option value="recommended">推荐排序</option><option value="pay">时薪从高到低</option><option value="distance">距离从近到远</option>
+            </select>
+            <svg class="icon filter-chevron" aria-hidden="true"><use href="#icon-chevron"/></svg>
+          </label>
+        </div>
+        <div class="job-grid" id="job-list"></div>
+        <noscript><p>请开启 JavaScript 以查看岗位和体验报名流程。</p></noscript>
+      </section>
+
+      <aside class="safety-note">
+        <span class="safety-icon"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg></span>
+        <div><strong>兼职安全小贴士</strong><p>到岗前核对班次、薪资和结算时间，遇到要求先交押金或培训费的岗位请谨慎。</p></div>
+      </aside>
+    </section>
+
+    <section class="workspace-view" data-view="applications" aria-labelledby="applications-title" hidden>
+      <header class="page-heading">
+        <p class="section-kicker">MY APPLICATIONS</p>
+        <h1 class="section-title" id="applications-title">我的报名</h1>
+        <p>查看每份报名的班次和处理进度，行程有变时可撤回报名。</p>
+      </header>
+      <div class="workspace-list" id="application-list"></div>
+    </section>
+
+    <section class="workspace-view" data-view="favorites" aria-labelledby="favorites-title" hidden>
+      <header class="page-heading">
+        <p class="section-kicker">SAVED JOBS</p>
+        <h1 class="section-title" id="favorites-title">我的收藏</h1>
+        <p>把感兴趣的兼职放在这里，等确定周末安排再报名。</p>
+      </header>
+      <div class="job-grid" id="favorite-list"></div>
+    </section>
+
+    <section class="workspace-view" data-view="merchant" aria-labelledby="merchant-title" hidden>
+      <header class="page-heading merchant-heading">
+        <div>
+          <p class="section-kicker">MERCHANT CENTER</p>
+          <h1 class="section-title" id="merchant-title">商家工作台</h1>
+          <p>发布周末班次，查看报名并确认到岗人选。</p>
+        </div>
+        <button type="button" class="search-submit" data-action="publish"><svg class="icon" aria-hidden="true"><use href="#icon-plus"/></svg>发布新岗位</button>
+      </header>
+      <div class="workspace-list" id="merchant-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><span>杭州下沙 · 校园周边周末兼职</span><span>体验版 · 演示数据保存在当前浏览器</span></div>
+  </footer>
+
+  <dialog class="dialog" id="job-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner" id="job-dialog-content"></div>
+  </dialog>
+
+  <dialog class="dialog" id="publish-dialog" aria-labelledby="publish-title">
+    <div class="dialog-inner">
+      <header class="dialog-header">
+        <div><p class="section-kicker">NEW WEEKEND SHIFT</p><h2 id="publish-title">发布周末岗位</h2><p>填写具体班次与报酬，方便同学判断是否合适。</p></div>
+        <button type="button" class="dialog-close" data-close aria-label="关闭发布表单"><svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg></button>
+      </header>
+      <form class="publish-form" id="publish-form">
+        <div class="form-grid">
+          <label class="form-field"><span>岗位名称</span><input name="title" maxlength="30" placeholder="例如：咖啡店周末店员" required></label>
+          <label class="form-field"><span>商家名称</span><input name="merchant" maxlength="30" placeholder="例如：梧桐咖啡" required></label>
+          <label class="form-field"><span>附近校区</span><select name="campus" required><option value="xia-sha">下沙大学城</option><option value="zhejiang-gongshang">浙江工商大学</option><option value="hangzhou-dianzi">杭州电子科技大学</option><option value="zhejiang-ligong">浙江理工大学</option></select></label>
+          <label class="form-field"><span>岗位类别</span><select name="category" required><option value="餐饮">餐饮</option><option value="零售">零售</option><option value="活动">活动</option><option value="家教">家教</option><option value="其他">其他</option></select></label>
+          <label class="form-field form-wide"><span>工作地址</span><input name="address" maxlength="70" placeholder="例如：下沙学源街 118 号一楼" required></label>
+          <label class="form-field"><span>时薪（元/小时）</span><input name="pay" type="number" inputmode="decimal" min="1" max="999" step="0.5" placeholder="28" required></label>
+          <label class="form-field"><span>结算方式</span><select name="settlement" required><option value="日结">日结</option><option value="周结">周结</option></select></label>
+          <label class="form-field"><span>班次日期</span><select name="day" required><option value="sat">本周六</option><option value="sun">本周日</option></select></label>
+          <label class="form-field"><span>招募人数</span><input name="headcount" type="number" inputmode="numeric" min="1" max="100" value="2" required></label>
+          <label class="form-field"><span>开始时间</span><input type="time" name="start" value="09:00" required></label>
+          <label class="form-field"><span>结束时间</span><input type="time" name="end" value="13:00" required></label>
+          <label class="form-field form-wide"><span>工作内容与要求</span><textarea name="description" rows="3" maxlength="300" placeholder="写清主要职责、经验要求和到岗注意事项" required></textarea></label>
+        </div>
+        <div class="dialog-actions">
+          <button type="button" class="secondary-button" data-close>取消</button>
+          <button type="submit" class="search-submit">确认发布<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>

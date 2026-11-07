@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" fill="none" role="img" aria-labelledby="title">
+  <title id="title">一间周末营业的校园咖啡馆，店员正在递出一杯咖啡</title>
+  <defs>
+    <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".95" fill="#C4DC9F" opacity=".44"/>
+    </pattern>
+    <pattern id="wall" width="36" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 12H36M13 6H25" stroke="#B6AE8F" stroke-opacity=".25"/>
+    </pattern>
+    <pattern id="lines" width="7" height="7" patternUnits="userSpaceOnUse">
+      <path d="M0 7 7 0" stroke="#476849" stroke-opacity=".24"/>
+    </pattern>
+    <clipPath id="service">
+      <rect x="130" y="134" width="147" height="71" rx="3"/>
+    </clipPath>
+    <clipPath id="shopdoor">
+      <path d="M303 252v-88a25 25 0 0 1 50 0v88Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- A quiet orbit and a grid of print dots frame the storefront. -->
+  <path d="M76 164a173 126 0 0 1 310-90M410 102a173 126 0 0 1 24 71" stroke="#749677" stroke-width="1.1" stroke-dasharray="2 6" stroke-linecap="round" opacity=".75"/>
+  <path d="M334 31h92v66h-92zM43 178h67v77H43z" fill="url(#dots)"/>
+  <circle cx="328" cy="102" r="71" fill="#72945E" opacity=".28"/>
+  <circle cx="328" cy="102" r="71" stroke="#A8C587" stroke-opacity=".5" stroke-dasharray="1 5" stroke-linecap="round"/>
+  <path d="M105 57c7 0 10-3 10-10 0 7 3 10 10 10-7 0-10 3-10 10 0-7-3-10-10-10ZM423 128c7 0 10-3 10-10 0 7 3 10 10 10-7 0-10 3-10 10 0-7-3-10-10-10Z" fill="#D7EC9E"/>
+  <path d="M381 38h10m-5-5v10M69 162h10m-5-5v10M457 199h10m-5-5v10" stroke="#B7D581" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="112" cy="180" r="2.5" fill="#C9E49B"/>
+  <circle cx="446" cy="158" r="2.5" fill="#C9E49B"/>
+  <ellipse cx="259" cy="264" rx="200" ry="15" fill="#09281F" opacity=".56"/>
+  <path d="M71 266h38m298 0h38M95 274h57m218 0h26" stroke="#85A876" stroke-opacity=".64" stroke-linecap="round"/>
+
+  <!-- Storefront and architectural details. -->
+  <g stroke="#1C4030" stroke-width="2" stroke-linejoin="round">
+    <path d="M102 252h267l29-12v13l-29 12H102z" fill="#8BA26F"/>
+    <path d="M102 252h267v13H102z" fill="#B6C98D"/>
+    <path d="M107 81h261v173H107z" fill="#F2EACE"/>
+    <path d="M107 153h261v101H107z" fill="url(#wall)" stroke="none"/>
+    <path d="m368 81 27 16v145l-27 12Z" fill="#AEBA8F"/>
+    <path d="m374 106 15 9v122l-15 7z" fill="url(#lines)" stroke="none"/>
+    <path d="m104 79 18-22h239l33 30-27 2Z" fill="#B3C883"/>
+    <path d="M104 79h264v12H104z" fill="#E1EDAC"/>
+    <path d="m368 79 27 8v12l-27-8Z" fill="#839B6D"/>
+    <path d="M117 72h242" stroke="#7B975F" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M108 230h194m51 0h15" stroke="#C1BB9C" stroke-width="1.4"/>
+    <path d="M122 236h162v18H122z" fill="#D6D7AE"/>
+    <path d="M125 244h156" stroke="#9EAA7D" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M285 254V141h-2m77 113V141h4" stroke="#B3A887" stroke-width="1.3"/>
+  </g>
+
+  <!-- Cafe sign and striped canvas canopy. -->
+  <g stroke="#1C4030" stroke-width="1.7" stroke-linejoin="round">
+    <rect x="173" y="67" width="114" height="28" rx="6" fill="#254C37"/>
+    <rect x="176" y="69" width="108" height="24" rx="4" stroke="#9EBD74" stroke-width="1"/>
+    <text x="230" y="84.5" fill="#EDF0CB" stroke="none" font-family="system-ui, sans-serif" font-size="9" font-weight="700" letter-spacing="2.1" text-anchor="middle">WEEKEND</text>
+    <path d="M118 96h242l16 28H96Z" fill="#E9EBC4"/>
+    <path d="m118 96-22 28h40l14-28Zm65 0-8 28h40v-28Zm65 0 6 28h41l-15-28Zm65 0 20 28h43l-16-28Z" fill="#A7CD83" stroke="none"/>
+    <path d="m150 96-14 28m47-28-8 28m40-28v28m33-28 6 28m26-28 15 28m18-28 20 28" stroke="#3B5C3F" stroke-opacity=".58" stroke-width="1"/>
+    <path d="M96 124h280v4a8 8 0 0 1-8 8H104a8 8 0 0 1-8-8Z" fill="#D7DCAB"/>
+    <path d="M97 125h39v10h-31a8 8 0 0 1-8-7Zm78 0h40v10h-40Zm79 0h41v10h-41Zm79 0h42v3a7 7 0 0 1-7 7h-35Z" fill="#8FB777" stroke="none"/>
+  </g>
+
+  <!-- The service window and barista. -->
+  <rect x="125" y="133" width="157" height="77" rx="5" fill="#D6D8AF" stroke="#1C4030" stroke-width="1.8"/>
+  <g clip-path="url(#service)">
+    <path d="M130 134h147v71H130z" fill="#386447"/>
+    <path d="M130 175h147v30H130z" fill="#64815A"/>
+    <path d="M130 171h147v4H130z" fill="#2A5038"/>
+    <path d="M132 146h36v17h-36z" fill="#C8D6A2" stroke="#274B34" stroke-width="1.4"/>
+    <path d="M136 151h13m-13 4h21m-21 4h16" stroke="#58764F" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M252 136v12m-12 12 6-12h12l6 12Z" fill="#E6CB88" stroke="#20422F" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M244 160h16a8 8 0 0 1-16 0Z" fill="#E9E3A9"/>
+    <path d="M135 196h35v-15h-35z" fill="#C3CDA4" stroke="#264730" stroke-width="1.5"/>
+    <path d="M142 180v-7h20v7m-14 4v6m5-6v6m4-6v6" stroke="#264730" stroke-width="1.35" stroke-linecap="round"/>
+    <path d="M176 206c1-18 5-24 16-26l8-3 8 2c11 3 15 12 18 27Z" fill="#EBCC87" stroke="#253E2F" stroke-width="1.7"/>
+    <path d="M192 177v-7h12v10l-5 4-7-4Z" fill="#E3AA81" stroke="#253E2F" stroke-width="1.5"/>
+    <path d="M187 156c0-8 7-12 14-11 8 1 11 8 10 14l-2 9-5 5h-8l-6-5-3-7Z" fill="#EDB78E" stroke="#253E2F" stroke-width="1.6"/>
+    <path d="M188 164c-7-4-6-13-1-17 3-4 8-5 14-4 7 0 13 5 13 13-6 1-10-1-13-5-3 4-6 6-12 6z" fill="#294735" stroke="#253E2F" stroke-width="1.3"/>
+    <path d="M185 150c2-7 9-10 16-9 6 1 12 6 12 11l-23 1Z" fill="#D6E899" stroke="#253E2F" stroke-width="1.5"/>
+    <path d="M197 151c8-1 18-1 23 2-5 3-13 3-22 1" fill="#B4CF7C" stroke="#253E2F" stroke-width="1.3"/>
+    <path d="M195 160h.2m10 0h.2m-7 5q2 2 4 0" stroke="#4F4036" stroke-width="1.35" stroke-linecap="round"/>
+    <path d="M186 206l3-15h20l4 15m-22-23 1 8m15-8-1 8" fill="#C9DCA4" stroke="#3D6447" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M216 186q7 10 15 7l11-7 5 6-15 10q-8 3-17-3" fill="#EAB58C" stroke="#253E2F" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M240 178h12l-2 13h-8Z" fill="#F3EAC6" stroke="#294735" stroke-width="1.4" stroke-linejoin="round"/>
+    <path d="M239 177h14v3h-14z" fill="#D1DF98" stroke="#294735" stroke-width="1.15" stroke-linejoin="round"/>
+    <path d="M257 193h6v9h-6zm8-3h6v12h-6z" fill="#E8D7A3" stroke="#34583D" stroke-width="1.1"/>
+    <path d="M129 137h149" stroke="#244C35" stroke-opacity=".4" stroke-width="5"/>
+  </g>
+  <path d="M129 138v65h148v-65" stroke="#274A35" stroke-width="1.5"/>
+  <path d="M121 205h165v6H121z" fill="#D5E6A7" stroke="#264A34" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M123 212h160v5H123z" fill="#9EB582"/>
+
+  <!-- Arched front door. -->
+  <path d="M299 253v-89a29 29 0 1 1 58 0v89Z" fill="#CBD2A7" stroke="#244A33" stroke-width="1.8"/>
+  <g clip-path="url(#shopdoor)">
+    <path d="M301 137h54v116h-54z" fill="#4E7553"/>
+    <path d="m299 185 57-51v17l-57 51zm0 23 57-51v7l-57 51z" fill="#83A879" opacity=".65"/>
+    <path d="M327 139v114m-24-84h50m-50 54h50" stroke="#294C36" stroke-width="1.5"/>
+    <path d="M303 227h50v26h-50z" fill="#719163"/>
+    <rect x="322" y="202" width="3" height="12" rx="1.5" fill="#EBD496"/>
+    <path d="m337 183 4-5 4 5" stroke="#D9E8AE" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="333" y="182" width="16" height="9" rx="1.4" fill="#DCE8AD" stroke="#355642" stroke-width="1.2"/>
+    <path d="M336 186.5h10" stroke="#63804E" stroke-width="1.1" stroke-linecap="round"/>
+  </g>
+  <path d="M303 252v-88a25 25 0 0 1 50 0v88m-57 1h64" stroke="#244A33" stroke-width="1.65" stroke-linecap="round"/>
+
+  <!-- Floating calendar token and little pin. -->
+  <g transform="translate(37 83) rotate(-13 25 25)" stroke="#193F2E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="51" height="43" rx="10" fill="#102F25" opacity=".5" stroke="none"/>
+    <rect width="51" height="43" rx="10" fill="#EAF1CC"/>
+    <path d="M1 13h49" stroke="#7E9B6F" stroke-width="1.2"/>
+    <path d="M15 0v6m22-6v6" stroke="#ACC88A" stroke-width="3.5"/>
+    <path d="M15 27l6 5 13-12" stroke="#47784B" stroke-width="2.2"/>
+    <circle cx="40" cy="32" r="2" fill="#ACC88A" stroke="none"/>
+  </g>
+  <g transform="translate(413 56) rotate(12 21 21)">
+    <circle cx="22" cy="23" r="21" fill="#102F25" opacity=".55"/>
+    <circle cx="21" cy="21" r="20" fill="#CDE88E" stroke="#244C34" stroke-width="1.6"/>
+    <path d="M21 30c4-4 8-7.7 8-12a8 8 0 0 0-16 0c0 4.3 4 8 8 12Z" stroke="#28523A" stroke-width="1.7" stroke-linejoin="round"/>
+    <circle cx="21" cy="18" r="2.6" stroke="#28523A" stroke-width="1.5"/>
+  </g>
+
+  <!-- Planter and pavement board. -->
+  <g stroke="#244631" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M91 241c-2-14-7-22-15-30m17 29c1-10 5-19 11-26m-13 26c-4-6-11-10-18-10" stroke="#A8C881"/>
+    <path d="M89 226c-9 0-17-7-17-18 10 1 17 8 17 18Z" fill="#ABC984"/>
+    <path d="M94 228c-1-9 5-17 15-20-1 10-6 17-15 20Z" fill="#C4DE96"/>
+    <path d="M85 235c-8 2-16-2-20-8 7-3 15 0 20 8Z" fill="#81A96D"/>
+    <path d="m79 241 4 18h16l4-18z" fill="#E5BC88"/>
+    <path d="M77 240h27v5H77z" fill="#F1D4A8"/>
+    <path d="m414 218 10 43h8l-8-43Z" fill="#8FA677"/>
+    <path d="m400 217-9 44h30l5-44Z" fill="#E9DCAC"/>
+    <path d="m403 221-7 34h22l4-34Z" fill="#3C6244"/>
+    <path d="M402 245h13m-12 4h9m-7-20h9l-2 8h-6Zm9 2h2c1 3 0 4-3 4" stroke="#D9E5AB" stroke-width="1.1"/>
+    <path d="m397 258-1 6m24-5-1 5m12-5 2 5" stroke="#D9D3A4" stroke-width="2.1"/>
+  </g>
+</svg>
